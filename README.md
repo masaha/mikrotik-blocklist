@@ -1,9 +1,9 @@
 # mikrotik-blocklist
-Create blocklist for Mikrotik ROS
+Create blocklist for Mikrotik ROS. Tested on Mikrotik RB4011, RB3011, HexS. Consumes about 100 MB of ram. 
 
-There are two scripts, one to fetch data and store in mysql database. The other gets data from database and makes a output file in ROS format.
+There are two scripts, one to fetch data and store in mysql databasei, fetch.pl. The other sceipt (export.pl) gets data from database and makes a output file in ROS format.
 
-Currently the export.pl fetches the blascklisted ip seen the last 3 days.
+Currently the export.pl fetches the blacklisted ip stored in the database the last 3 days. Modify this to whatever you find useful. Currently the output consists of around 80 000 unique addresses.
 
 
 The database needs to have 5 fields:
