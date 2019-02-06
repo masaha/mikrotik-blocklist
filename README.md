@@ -3,6 +3,8 @@ Create blocklist for Mikrotik ROS
 
 There are two scripts, one to fetch data and store in mysql database. The other gets data from database and makes a output file in ROS format.
 
+Currently the export.pl fetches the blascklisted ip seen the last 3 days.
+
 
 The database needs to have 5 fields:
 
@@ -18,5 +20,5 @@ updated		timestamp	No		None	CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP
 
 comment		tinytext	Yes		None	NULL
 
-
+The schema.sql can be used to populate your database.
 
